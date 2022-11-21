@@ -1,3 +1,3 @@
 namespace SevCashIF.Core.Models.Signatures;
 
-public class Germany : ISignature { }
+public interface ISignature { }
