@@ -1,9 +1,8 @@
 ﻿using System.Text.Json.Nodes;
 
-namespace SevCashIF.Core;
+namespace SevCashIF.Core.Handler;
 
-public interface RestHandler
-{
-    public abstract string BaseApi();
-    protected static HttpClient hc = new HttpClient();
+public abstract class RestHandler {
+    protected static HttpClient _httpClient;
+    protected Queue<DateTime> Accesses = new Queue<DateTime>();
 }

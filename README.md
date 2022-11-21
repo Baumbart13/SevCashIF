@@ -1,4 +1,4 @@
 SevCashIF
 =========
 
-An interface for SevDesk and HelloCash
+An interface for [SevDesk](https://sevdesk.com) and [HelloCash](https://hellocash.at)

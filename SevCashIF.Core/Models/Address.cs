@@ -1,8 +1,10 @@
+using System.Numerics;
+
 namespace SevCashIF.Core.Models; 
 
-public class Address {
+public record Address {
     public string Street { get; set; } = string.Empty;
-    public string HouseNumber { get; set; } = string.Empty;
-    public string PostalCode { get; set; } = string.Empty;
-    public string CityName { get; set; } = string.Empty;
+    public BigInteger HouseNumber { get; set; }
+    public BigInteger PostalCode { get; set; }
+    public string City { get; set; } = string.Empty;
 }
