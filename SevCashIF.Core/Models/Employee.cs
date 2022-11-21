@@ -1,6 +1,7 @@
 namespace SevCashIF.Core.Models;
 
 public class Employee : User {
+    public const string ApiCommand = "employees";
     /// <summary>
     /// Name of the emplyoee
     /// </summary>

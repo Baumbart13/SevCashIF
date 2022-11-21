@@ -3,6 +3,8 @@ using System.Numerics;
 namespace SevCashIF.Core.Models; 
 
 public class Cashbook {
+    public const string ApiCommand = "cashBook";
+    
     public class Entry : Entity {
         public DateTime Timestamp { get; set; }
         public BigInteger Number { get; set; }

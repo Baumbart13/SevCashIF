@@ -1,6 +1,7 @@
 namespace SevCashIF.Core.Models;
 
 public class Service : Entity {
+    public const string ApiCommand = "services";
     /// <summary>
     /// Required
     /// </summary>

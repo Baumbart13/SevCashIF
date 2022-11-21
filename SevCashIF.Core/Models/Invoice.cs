@@ -3,6 +3,8 @@ using System.Numerics;
 namespace SevCashIF.Core.Models;
 
 public class Invoice : Entity {
+    public const string ApiCommand = "invoices";
+    
     /// <summary>
     /// Creation time. Required
     /// </summary>

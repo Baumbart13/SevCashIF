@@ -1,6 +1,8 @@
 namespace SevCashIF.Core.Models;
 
 public class Article : Entity {
+    public const string ApiCommand = "articles";
+    
     public static class DiscountUnit {
         public const string Absolute = "absolute";
         public const string Percent = "percent";

@@ -3,6 +3,8 @@ using System.Numerics;
 namespace SevCashIF.Core.Models;
 
 public class User : Entity {
+    public const string ApiCommand = "users";
+    
     /// <summary>
     /// User's salutation, e.g. 'Mr.'
     /// </summary>
