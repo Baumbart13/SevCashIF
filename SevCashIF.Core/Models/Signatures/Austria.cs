@@ -1,3 +1,5 @@
-namespace SevCashIF.Core.Models.Signatures;
+namespace SevCashIF.Core.Models.Signatures; 
 
-public class Austria : ISignature { }
+public class Austria : ISignature{
+    
+}
