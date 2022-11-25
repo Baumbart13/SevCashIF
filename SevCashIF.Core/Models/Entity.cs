@@ -6,5 +6,5 @@ public abstract class Entity {
     /// <summary>
     /// System-ID of the entity
     /// </summary>
-    public BigInteger Id { get; set; }
+    public BigInteger SystemId { get; set; }
 }

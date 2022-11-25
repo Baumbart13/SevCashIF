@@ -35,7 +35,7 @@ public class Invoice : Entity {
     /// <summary>
     /// Payment method name. Required
     /// </summary>
-    public string Payment { get; set; } = string.Empty;
+    public PaymentMethod Payment { get; set; }
 
     /// <summary>
     /// Total gross value after discounts. Required
