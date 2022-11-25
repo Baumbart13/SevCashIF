@@ -1,7 +1,7 @@
 namespace SevCashIF.Core.Models;
 
 public class Color {
-    public string Name { get; init; }
+    public string Name { get; init; } = string.Empty;
     public uint Background { get; init; }
     public uint Text { get; init; }
 
