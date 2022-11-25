@@ -4,7 +4,10 @@ namespace SevCashIF.Core.Models;
 
 public class Invoice : Entity {
     public const string ApiCommand = "invoices";
-    
+
+    [JsonProperty(PropertyName = "invoice_id", Required = Required.Always)]
+    public override BigInteger SystemId { get; set; }
+
     /// <summary>
     /// Creation time. Required
     /// </summary>
