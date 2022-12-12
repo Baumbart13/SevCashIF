@@ -32,13 +32,7 @@ public class User : Entity {
     public string Street { get; set; } = string.Empty;
     public string HouseNumber { get; set; } = string.Empty;
     public DateOnly Birthday { get; set; }
-    public BigInteger UidNumber { get; set; }
-
-    public BigInteger VATNumber {
-        get => UidNumber;
-        set => UidNumber = value;
-    }
-
+    public string UidNumber { get; set; }
     public string Notes { get; set; } = string.Empty;
 
     /// <summary>
