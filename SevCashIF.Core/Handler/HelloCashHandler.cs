@@ -1,4 +1,5 @@
 using System.Numerics;
+using Newtonsoft.Json;
 using SevCashIF.Core.Models;
 
 namespace SevCashIF.Core.Handler;
@@ -6,6 +7,10 @@ namespace SevCashIF.Core.Handler;
 public class HelloCashHandler : RestHandler {
     private static readonly Uri BaseAddress = new Uri("https://api.hellocash.business/api/v1/");
     public static string AuthToken { get; set; } = string.Empty;
+
+    protected override JsonConverter Converter() {
+        return Converter();
+    }
 
     protected static HttpClient HttpClient {
         get {
@@ -42,6 +47,12 @@ public class HelloCashHandler : RestHandler {
         // TODO: implement Json-Serialization successfully
 
         using var response = _httpClient.GetAsync($"{Invoice.ApiCommand}/{systemId}").Result;
+        if (!response.IsSuccessStatusCode) {
+            throw new HttpRequestException("Status code not successful");
+        }
+
+        var json = response.Content.ReadAsStringAsync();
+        JsonConvert.DeserializeObject<Invoice>(json.Result);
         /*var invoice = new Invoice {
             SystemId = systemId,
             Timestamp = timestamp,
