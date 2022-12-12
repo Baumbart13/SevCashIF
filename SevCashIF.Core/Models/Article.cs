@@ -24,6 +24,9 @@ public class Article : Entity {
     public decimal NetSellingPrice { get; set; }
     public decimal GrossSellingPrice { get; set; }
 
+    public DiscountUnit ItemDiscountUnit { get; set; }
+    public decimal ItemDiscountUnitValue { get; set; }
+
     /// <summary>
     /// Minimum stock for warning mail (when configured)
     /// </summary>
