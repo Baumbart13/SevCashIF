@@ -2,8 +2,8 @@ namespace SevCashIF.Core.Models;
 
 public class Article : Entity {
     public const string ApiCommand = "articles";
-    
-    public static class DiscountUnit {
+
+    public class DiscountUnit {
         public const string Absolute = "absolute";
         public const string Percent = "percent";
     }
@@ -28,12 +28,12 @@ public class Article : Entity {
     /// Minimum stock for warning mail (when configured)
     /// </summary>
     public decimal MinimumStock { get; set; }
-    
+
     /// <summary>
     /// Is the article a reference to an invoice or not
     /// </summary>
     public bool IsBillReference { get; set; }
-    
+
     public Category Category { get; set; }
     public Company Supplier { get; set; }
     public Company Manufacturer { get; set; }

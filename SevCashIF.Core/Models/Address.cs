@@ -1,6 +1,6 @@
 using System.Numerics;
 
-namespace SevCashIF.Core.Models; 
+namespace SevCashIF.Core.Models;
 
 public record Address {
     public string Street { get; set; } = string.Empty;

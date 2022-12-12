@@ -2,6 +2,7 @@ namespace SevCashIF.Core.Models;
 
 public class Service : Entity {
     public const string ApiCommand = "services";
+
     /// <summary>
     /// Required
     /// </summary>
@@ -36,6 +37,6 @@ public class Service : Entity {
     /// Required
     /// </summary>
     public Color Color { get; set; } = Color.Default;
-    
+
     public Category Category { get; set; }
 }

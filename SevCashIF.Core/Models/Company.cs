@@ -14,7 +14,6 @@ public class Company : Entity {
     public string CompanyRegister { get; set; } = string.Empty;
 
     public string TaxNumber { get; set; } = string.Empty;
-
     public string IBAN { get; set; } = string.Empty; // TODO: implement check for valid IBAN
     public string BIC { get; set; } = string.Empty;
     public string Comment { get; set; } = string.Empty;

@@ -14,7 +14,7 @@ public class Invoice : Entity {
     /// </summary>
     [JsonProperty(PropertyName = "invoice_timestamp", Required = Required.Always)]
     public DateTime Timestamp { get; set; }
-    
+
     /// <summary>
     /// Consecutive invoice number. Required
     /// </summary>
@@ -26,7 +26,7 @@ public class Invoice : Entity {
     /// </summary>
     [JsonProperty(PropertyName = "invoice_cashier", Required = Required.Always)]
     public string Cashier { get; set; } = string.Empty;
-    
+
     /// <summary>
     /// System-ID of cashier
     /// </summary>
@@ -64,7 +64,7 @@ public class Invoice : Entity {
     /// </summary>
     [JsonProperty(PropertyName = "invoice_discount")]
     public decimal Discount { get; set; }
-    
+
     /// <summary>
     /// Was the invoice canceled or not
     /// </summary>
@@ -82,7 +82,7 @@ public class Invoice : Entity {
     /// </summary>
     [JsonProperty(PropertyName = "invoice_totalNet", Required = Required.Always)]
     public decimal TotalNet { get; set; }
-    
+
     /// <summary>
     /// Total tax value after discounts. Required
     /// </summary>
@@ -106,31 +106,31 @@ public class Invoice : Entity {
     /// </summary>
     [JsonProperty(PropertyName = "invoice_small_business")]
     public bool IsSmallBusiness { get; set; }
-    
+
     /// <summary>
     /// Returns true when differential taxation is selected in settings
     /// </summary>
     [JsonProperty(PropertyName = "invoice_differential_taxation")]
     public bool IsDifferentialTaxation { get; set; }
-    
+
     /// <summary>
     /// Currency used for the invoice. Required
     /// </summary>
     [JsonProperty(PropertyName = "invoice_currency", Required = Required.Always)]
     public string Currency { get; set; } = string.Empty;
-    
+
     /// <summary>
     /// Own company on invoice
     /// </summary>
     [JsonProperty(PropertyName = "company", Required = Required.Always)]
     public Company Company { get; set; }
-    
+
     /// <summary>
     /// The items with their quantity
     /// </summary>
     [JsonProperty(PropertyName = "items", Required = Required.Always)]
     public Dictionary<Article, int> Items { get; set; }
-    
+
     /// <summary>
     /// The customer
     /// </summary>
