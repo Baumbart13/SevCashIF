@@ -27,7 +27,10 @@ public class User : Entity {
 
     public string Email { get; set; } = string.Empty;
     public string Phone { get; set; } = string.Empty;
-    public Address Address { get; set; }
+    public BigInteger PostalCode { get; set; }
+    public string City { get; set; } = string.Empty;
+    public string Street { get; set; } = string.Empty;
+    public string HouseNumber { get; set; } = string.Empty;
     public DateOnly Birthday { get; set; }
     public BigInteger UidNumber { get; set; }
 

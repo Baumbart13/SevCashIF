@@ -2,7 +2,7 @@ namespace SevCashIF.Core.Models;
 
 public class Company : Entity {
     public string Name { get; set; } = string.Empty;
-    public Address Address { get; set; }
+    public string Address { get; set; } = string.Empty;
     public string PhoneNumber { get; set; } = string.Empty;
     public string EMail { get; set; } = string.Empty;
     public Uri Website { get; set; } = new Uri(string.Empty);
